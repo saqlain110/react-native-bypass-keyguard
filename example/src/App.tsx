@@ -1,18 +1,24 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-bypass-keyguard';
+import {
+  showOverKeyguard,
+  clearShowOverKeyguard,
+} from 'react-native-bypass-keyguard';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    console.log('REACHHINGGGGGGGGGG');
+    showOverKeyguard();
+    return () => {
+      console.log('UNMOUNTTTTTTTTTTTTT');
+      clearShowOverKeyguard();
+    };
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Testing Application</Text>
     </View>
   );
 }

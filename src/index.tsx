@@ -17,6 +17,9 @@ const BypassKeyguard = NativeModules.BypassKeyguard
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return BypassKeyguard.multiply(a, b);
+export function showOverKeyguard() {
+  return BypassKeyguard.showOverKeyguard();
+}
+export function clearShowOverKeyguard() {
+  return BypassKeyguard.clearShowOverKeyguard();
 }

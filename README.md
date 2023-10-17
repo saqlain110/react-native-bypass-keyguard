@@ -11,11 +11,16 @@ npm install react-native-bypass-keyguard
 ## Usage
 
 ```js
-import { multiply } from 'react-native-bypass-keyguard';
+import { showOverKeyguard,clearShowOverKeyguard } from 'react-native-bypass-keyguard';
 
 // ...
 
-const result = await multiply(3, 7);
+  React.useEffect(() => {
+    showOverKeyguard();
+    return()=>{
+      clearShowOverKeyguard()
+    }
+  }, []);
 ```
 
 ## Contributing
