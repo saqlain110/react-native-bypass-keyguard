@@ -1,6 +1,6 @@
 {
   "name": "react-native-bypass-keyguard",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "React Native Bypass power button password for Android only",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
