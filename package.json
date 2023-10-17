@@ -37,7 +37,12 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "keyguard",
+    "lock-screen",
+    "power-button",
+    "password",
+    "bypass"
   ],
   "repository": "https://github.com/saqlain110/react-native-bypass-keyguard.git",
   "author": "Mohammad Saqlain <saqlain11000@gmail.com> (https://github.com/saqlain110/react-native-bypass-keyguard.git)",
