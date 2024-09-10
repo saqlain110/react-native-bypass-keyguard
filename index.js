@@ -1,19 +1,9 @@
-import {NativeModules} from 'react-native';
+/**
+ * @format
+ */
 
-const LockMode = NativeModules.KeyguardModule;
+import {AppRegistry} from 'react-native';
+import index from './src/index';
+import {name as appName} from './app.json';
 
-class LockScreenMode {
-  constructor() {
-    console.log('ITS RUNNINGGGG');
-    super(LockMode);
-  }
-
-  BypassLockModeKeyguard() {
-    return LockMode.showOverKeyguard();
-  }
-
-  ClearLockModeKeyguard() {
-    return LockMode.clearShowOverKeyguard();
-  }
-}
-export default new LockScreenMode();
+AppRegistry.registerComponent(appName, () => index);

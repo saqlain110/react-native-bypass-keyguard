@@ -1,4 +1,4 @@
-package com.y_drive_driver_app;
+package com.lockscreenmode;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;

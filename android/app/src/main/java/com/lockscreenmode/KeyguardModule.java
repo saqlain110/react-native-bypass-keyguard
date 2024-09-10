@@ -1,4 +1,4 @@
-package com.y_drive_driver_app;
+package com.lockscreenmode;
 
 import android.view.WindowManager;
 import com.facebook.react.bridge.NativeModule;

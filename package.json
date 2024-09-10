@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest"
   },
+  
   "description": "React Native Bypass power button password for Android only",
   "main": "index.js",
   "keywords": [
